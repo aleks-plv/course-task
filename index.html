@@ -4,27 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="bookIcon.jpg" type="image/x-icon"> <!--ne bachka, ne znam zashto-->
+
+    <link rel="icon" href="/bookIcon.jpg"> <!--ne bachka, ne znam zashto-->
     <title>Book Heaven</title>
+
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-   <!--<img src="headerImage.png" alt="Logo">--> 
-   <h1>Book Heaven</h1> 
+  <header class="header-style">
+    <div class="logo">
+        <img src="headerImage.png" alt="Logo">
+    </div>
+    <h1>Book Heaven</h1>
+    <nav class="nav-container">
+    
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="index.html">STORE</a></li>
+            <li><a href="index.html">ABOUT</a></li>
+     
+    </nav>
+  
 </header>
 <main>
     <h2>Най-добрите книги за 2023</h2>
-    <article>
-        <div>
-            <img src="club5AM.jpg" alt="cover">
-            <h3> Клуб 5 сутринта </h3>
-            <p> Автор: Робин Шарма </p>
-            <p> Издателство: Екслибрис </p>
-            <p> Издание: Мека корица </p>
-            <p> Брой страници: 368 </p>
+    
+    <div class="book-div">
+        <div class="book-info">
+            <div class="book-image">
+                <img src="club5AM.jpg" alt="cover">
+            </div>
+            <h3 class="heading"> Клуб 5 сутринта </h3>
+            <p> Автор: Робин Шарма <br>  
+                Издателство: Екслибрис <br>
+                Издание: Мека корица <br>
+                Брой страници: 368 
+            </p>
         </div>
 
-        <div>
+        <div class="book-description">
             <p>
                 „Клуб „5 сутринта“ е удивителната история на две обикновени човешки същества, които се стремят 
                 към повече продуктивност, успех и спокойствие в тази епоха на дигитални развлечения и смазваща сложност. 
@@ -32,12 +49,12 @@
                 в житейското ви пътешествие, тази книга ще промени живота ви. Завинаги.
             </p>
         </div>
-    </article>
+    </div>
 
-    <article>
+    <!-- <article>
         <div>
             <img src="devilBook.jpg" alt="cover">
-            <h3> Да прецакаш дявола </h3>
+            <h3 class="heading"> Да прецакаш дявола </h3> 
             <p> Автор: Наполеон Хил </p>
             <p> Издателство: AMG Publishing </p>
             <p> Издание: Мека корица </p>
@@ -45,7 +62,7 @@
         </div>
 
         <div>
-            <p>Непубликувана досега книга на прочутия Наполеон Хил, останала скрита повече от 70 години, 
+            <p class="description">Непубликувана досега книга на прочутия Наполеон Хил, останала скрита повече от 70 години, 
                 която излиза за пръв път в САЩ през юни 2011 г. и в България – през декември 2011 г. 
             </p>
         </div>
@@ -54,7 +71,7 @@
     <article>
         <div>
             <img src="richDad.jpg" alt="cover">
-            <p> Богат татко, беден татко </p>
+            <h3 class="heading"> Богат татко, беден татко </h3>
             <p> Автор: Робърт Кийосаки </p>
             <p> Издателство: Анхира </p>
             <p> Издание: Мека корица </p>
@@ -62,7 +79,7 @@
         </div>
 
         <div>
-            <p>
+            <p class="description">
                 Уроците за парите, на които богатите учат децата си, а бедните и средната класа - не.
                 Робърт Кийосаки промени начина, по който милиони хора по света мислят за парите. Той е 
                 световно признат експерт по финансова грамотност.
@@ -74,7 +91,7 @@
     <article>
         <div>
             <img src="leaders.jpg" alt="cover">
-            <h3> Лидерите винаги обядват последни </h3>
+            <h3 class="heading"> Лидерите винаги обядват последни </h3>
             <p> Автор: Саймън Синек </p>
             <p> Издателство: Кръгозор </p>
             <p> Издание: Твърда корица </p>
@@ -82,7 +99,7 @@
         </div>
 
         <div>
-            <p>
+            <p class="description">
                 Саймън Синек е непоколебим оптимист. Той е известен мотивационен и маркетингов консултант
                 и един от най-популярните TED лектори. TED лекцията му за вдъхновяващото лидерство е с 
                 над 40 милиона гледания. Идеите от нея са залегнали и в настоящата книга. Синек обръща специално 
@@ -95,7 +112,7 @@
     <article>
         <div>
             <img src="winner.jpg" alt="cover">
-            <h3> Изкуството на победата </h3>
+            <h3 class="heading"> Изкуството на победата </h3>
             <p> Автор: Фил Найт </p>
             <p> Издателство: Locus </p>
             <p> Издание: Мека корица </p>
@@ -103,19 +120,19 @@
         </div>
 
         <div>
-            <p>
+            <p class="description">
                 Автобиография на създателя на Nike! В ерата на стартъпите Nike на Найт е златният стандарт,
                 а неговият swoosh е нещо повече от лого. Символ на елегантност и величие, това е една от малкото икони, 
                 които се разпознават незабавно във всяко кътче на света. Но Найт, мъжът зад логото, винаги е бил загадка.
                 Сега той най-сетне ни разказва историята си в мемоари, които са изненадващи, нецензурирани, забавни и талантливо написани. 
             </p>
         </div>
-    </article>
+    </article> -->
 </main>
 
-<footer>
+<!-- <footer>
     <p> Copyright 2023, Aleksandrina Velikova </p>
-</footer>
+</footer> -->
 
 
 </body>
