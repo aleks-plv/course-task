@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
 
+
 * { 
     padding: 0;
     margin: 0;
@@ -16,6 +17,22 @@ body {
     background: url("./background.svg") center center;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    background-color: rgb(240, 172, 70);
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+.header-style {
+    position: sticky;
+    top:0;
+    left: 0;
+}
+
 .logo {
     padding: .5rem;
     width: 3rem;
@@ -27,25 +44,13 @@ body {
     max-width: 100%;
 }
 
-.h1-logo {
-    padding: 10px;
-    font-family: 'Kanit', sans-serif;
-    font-weight: 900;
-    text-transform: uppercase;
-    text-shadow: 4px 4px 5px rgb(49, 47, 47);
-  
-
-}
-.nav-container {
-    display: flex;
-    gap: 2rem;;
-    padding-right: 5rem;
-    background-color: rgb(240, 172, 70);
-}
-
 li {
     list-style-type: none;
     background-color: rgb(240, 172, 70);
+}
+
+nav li:hover {
+    background-color: rgb(255, 149, 29);
 }
 
 a {
@@ -64,35 +69,44 @@ a:focus {
   color: black;
 } */
 
-nav li:hover {
-  background-color: rgb(255, 149, 29);
-}
-
 a:active {
   background: darkred;
   color: white;
 }
 
-header {
+.nav-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: .5rem;
+    gap: 2rem;;
+    padding-right: 2rem;
     background-color: rgb(240, 172, 70);
 }
 
+/* main h1 {
+    text-align: center;
+    font-weight: 800;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: 'Dancing Script', cursive;
+    background-color:  rgb(241, 177, 81);
+    padding: .5rem;
+    zaglavieto, ako reshish da go slagash
+} */
+
 h2 {
     text-align: center;
-}
-
-.book-div,
-.book-info {
-    display: flex;
+    font-family: 'Raleway', sans-serif;
+    font-size: 4rem;
+    background-color: rgba(51, 51, 51, 0.5);
 }
 
 .book-div {
     width: 100%;
     margin: 2rem 0 0 0;
+}
+
+.book-div,
+.book-info {
+    display: flex;
 }
 
 .book-img {
@@ -103,6 +117,16 @@ h2 {
 .book-img img {
     max-width: 100%;
 }
+
+/* .h1-logo {
+    padding: 10px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 5px rgb(49, 47, 47);
+  tova mai ne go polzvam
+
+} */
 
 .book-info {
     flex-direction: column;
@@ -116,18 +140,22 @@ h2 {
     text-align: center;
     font-weight: 800;
     text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    
 }
 
 .book-info h4 {
     text-align: center;
     font-size: 1.5rem;
     padding: .35rem;
+    font-family: 'Raleway', sans-serif;
 }
 
 .book-info p {
     font-size: 1.5rem;
     padding: 3rem 15rem;
     line-height: 2rem;
+    font-family: 'Raleway', sans-serif;
 }
 
 .buy-button {
@@ -135,6 +163,7 @@ h2 {
     flex-direction: column;
     width: 100%;
     align-items: center;
+    font-family: 'Raleway', sans-serif;
 }
 
 .buy-button button {
@@ -143,16 +172,9 @@ h2 {
     font-size: 1.5rem;
     height: 3rem;
     background: transparent;
+    font-family: 'Raleway', sans-serif;
 }
 
 .buy-button span {
     font-size: 1.75rem;
-}
-
-main h1 {
-    text-align: center;
-    font-weight: 800;
-    font-size: 3rem;
-    text-transform: uppercase;
-    font-family: 'Dancing Script', cursive;
 }
