@@ -268,12 +268,16 @@ h2 {
   
 }
 
-.stars:hover a {
+.star:hover a {
   opacity: 100%;
 }
 
 .stars a:hover {
   opacity: 100%;
+}
+
+.star:active {
+  background: none;
 }
 
 .stars a:hover ~ a{
