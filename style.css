@@ -6,7 +6,7 @@
 * {
   padding: 0;
   margin: 0;
-  /* outline: 1px rgb(0, 255, 0) solid;   */
+  /* outline: 1px rgb(0, 255, 0) solid;    */
   box-sizing: border-box;
   /* font-family: 'Raleway', sans-serif; */
   color: white;
@@ -244,4 +244,42 @@ h2 {
 
 .text-page p {
   padding-bottom: 2rem;
+}
+
+/*stars*/
+.stars {
+  display: flex;
+  width: 50rem;
+  height: 7rem;
+  padding: 2rem 1rem;
+  margin-top: 5rem;
+  align-self: flex-end;
+  border-radius: 1rem;
+  background: rgba(121, 120, 120, 0.578);
+}
+
+.stars.disabled {
+  pointer-events: none;
+}
+.stars a {
+  opacity: 50%;
+  cursor: pointer;
+  padding: .3rem;
+  
+}
+
+.stars:hover a {
+  opacity: 100%;
+}
+
+.stars a:hover {
+  opacity: 100%;
+}
+
+.stars a:hover ~ a{
+  opacity: 50%;
+}
+
+.stars a.active {
+  opacity: 100;
 }
