@@ -6,7 +6,7 @@
 * {
   padding: 0;
   margin: 0;
-  /* outline: 1px rgb(0, 255, 0) solid;    */
+  /* outline: 1px rgb(0, 255, 0) solid;     */
   box-sizing: border-box;
   /* font-family: 'Raleway', sans-serif; */
   color: white;
@@ -59,14 +59,7 @@ a {
   color: black;
 }
 
-/* a:link,
-a:visited,
-a:focus {
-  background: rgb(240, 172, 70);
-  color: black;
-} */
-
-a:active {
+li a:active {
   background: darkred;
   color: white;
 }
@@ -78,22 +71,12 @@ a:active {
   background-color: rgb(240, 172, 70);
 }
 
-/* main h1 {
-    text-align: center;
-    font-weight: 800;
-    font-size: 3rem;
-    text-transform: uppercase;
-    font-family: 'Dancing Script', cursive;
-    background-color:  rgb(241, 177, 81);
-    padding: .5rem;
-    zaglavieto, ako reshish da go slagash
-} */
-
 h2 {
   text-align: center;
   font-family: "Raleway", sans-serif;
   font-size: 4rem;
   background-color: rgba(51, 51, 51, 0.5);
+  text-shadow: 1px 1px 2px black;
 }
 
 .book-div {
@@ -114,16 +97,6 @@ h2 {
 .book-img img {
   max-width: 100%;
 }
-
-/* .h1-logo {
-    padding: 10px;
-    font-family: 'Kanit', sans-serif;
-    font-weight: 900;
-    text-transform: uppercase;
-    text-shadow: 4px 4px 5px rgb(49, 47, 47);
-  tova mai ne go polzvam
-
-} */
 
 .book-info {
   flex-direction: column;
@@ -161,6 +134,7 @@ h2 {
   width: 100%;
   align-items: center;
   font-family: "Raleway", sans-serif;
+  outline: none;
 }
 
 .buy-button button {
@@ -170,7 +144,9 @@ h2 {
   height: 3rem;
   background: transparent;
   font-family: "Raleway", sans-serif;
-  /* cursor: pointer; */
+  border-radius: 1rem;
+  cursor: pointer; 
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .buy-button span {
@@ -193,6 +169,7 @@ h2 {
   margin-top: 10rem;
   margin-right: 5rem;
   margin-left: 2rem;
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .book-information h3 {
@@ -202,6 +179,7 @@ h2 {
   font-weight: 800;
   text-transform: uppercase;
   font-family: "Courier New", Courier, monospace;
+  text-shadow: 1px 1px 2px black;
 }
 
 .book-information p {
@@ -211,6 +189,7 @@ h2 {
   font-size: 1.3rem;
   line-height: 2rem;
   font-family: "Raleway", sans-serif;
+  text-shadow: 1px 1px 2px black;
 }
 
 .book-div-container {
@@ -223,7 +202,9 @@ h2 {
   padding: 3rem;
   width: 75rem;
   background: rgba(121, 120, 120, 0.578);
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
   border-radius: 1rem;
+  text-shadow: 1px 1px 2px black;
 }
 
 .text-page p {
@@ -256,6 +237,7 @@ h2 {
   align-self: flex-end;
   border-radius: 1rem;
   background: rgba(121, 120, 120, 0.578);
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .stars.disabled {
@@ -264,11 +246,10 @@ h2 {
 .stars a {
   opacity: 50%;
   cursor: pointer;
-  padding: .3rem;
-  
+  padding: 0.3rem;
 }
 
-.star:hover a {
+.stars:hover a {
   opacity: 100%;
 }
 
@@ -276,14 +257,104 @@ h2 {
   opacity: 100%;
 }
 
-.star:active {
+.stars:active {
   background: none;
 }
 
-.stars a:hover ~ a{
+.stars a:hover ~ a {
   opacity: 50%;
 }
 
 .stars a.active {
-  opacity: 100;
+  opacity: 100%;
 }
+
+/*buton za poruchka*/
+
+input,
+textarea {
+  color: black;
+  resize: none;
+}
+
+/*form*/
+#form {
+  display: none;
+}
+
+form {
+  padding: 1rem;
+  position: relative;
+  background:  rgb(240, 172, 70);
+  margin-left: 15rem;
+  height: 15rem;
+  width: 21rem;
+  border-radius: 1rem;
+}
+
+label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  width: 20rem;
+  text-align: center;
+}
+
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 100% sans-serif;
+
+  /* Uniform text field size */
+  width: 18rem;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  margin: .3rem;
+  
+}
+
+input:focus,
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+}
+
+textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* Provide space to type some text */
+  height: 5em;
+}
+
+.order-button {
+  padding: .5rem;
+  margin-left: .5rem;
+  line-height: 2.5;
+  font-size: 1rem;
+  text-align: center;
+  
+
+}
+
+.order-button button:hover {
+  background-color: rgba(255, 0, 0, 1);
+  
+}
+
+.order-button butto:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.order-button button {
+  line-height: 2;
+  width: 7rem;
+  border-radius: .5rem;
+  color:rgb(255, 255, 255);
+  font-weight: bold;
+  background-color: rgba(199, 44, 44, 0.788);
+  cursor: pointer;
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
