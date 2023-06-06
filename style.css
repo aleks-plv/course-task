@@ -23,6 +23,7 @@ header {
   padding: 0.5rem;
   background-color: rgb(240, 172, 70);
   font-family: "Raleway", sans-serif;
+  z-index: 999;
 }
 
 .header-style {
@@ -144,9 +145,11 @@ h2 {
   height: 3rem;
   background: transparent;
   font-family: "Raleway", sans-serif;
+  border: none;
   border-radius: 1rem;
-  cursor: pointer; 
-  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .buy-button span {
@@ -169,7 +172,8 @@ h2 {
   margin-top: 10rem;
   margin-right: 5rem;
   margin-left: 2rem;
-  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .book-information h3 {
@@ -202,7 +206,8 @@ h2 {
   padding: 3rem;
   width: 75rem;
   background: rgba(121, 120, 120, 0.578);
-  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
   border-radius: 1rem;
   text-shadow: 1px 1px 2px black;
 }
@@ -237,7 +242,8 @@ h2 {
   align-self: flex-end;
   border-radius: 1rem;
   background: rgba(121, 120, 120, 0.578);
-  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .stars.disabled {
@@ -249,10 +255,7 @@ h2 {
   padding: 0.3rem;
 }
 
-.stars:hover a {
-  opacity: 100%;
-}
-
+.stars:hover a,
 .stars a:hover {
   opacity: 100%;
 }
@@ -269,6 +272,16 @@ h2 {
   opacity: 100%;
 }
 
+/*#btn*/
+#btn {
+  background: rgba(121, 120, 120, 0.578);
+  border-radius: 1rem;
+  width: 50rem;
+  outline: none;
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  text-shadow: 1px 1px 2px black;
+}
 /*buton za poruchka*/
 
 input,
@@ -277,20 +290,37 @@ textarea {
   resize: none;
 }
 
-/*form*/
-#form {
-  display: none;
+/*!form*/
+*::after, *::before {
+  box-sizing: border-box;
 }
 
 form {
   padding: 1rem;
   position: relative;
-  background:  rgb(240, 172, 70);
+  bottom: 20rem;
+  background: rgba(14, 42, 71, 1);
   margin-left: 15rem;
-  height: 15rem;
+  height: 16rem;
   width: 21rem;
+  max-width: 80%;
   border-radius: 1rem;
+  z-index: 10;
+  transition: 200ms ease-in-out;
 }
+
+.close {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-left: 17rem;
+  margin-bottom: 0.5rem;
+}
+
+
 
 label {
   /* Uniform size & alignment */
@@ -310,8 +340,7 @@ textarea {
   box-sizing: border-box;
 
   /* Match form field borders */
-  margin: .3rem;
-  
+  margin: 0.3rem;
 }
 
 input:focus,
@@ -329,32 +358,30 @@ textarea {
 }
 
 .order-button {
-  padding: .5rem;
-  margin-left: .5rem;
+  padding: 0.5rem;
+  margin-left: 0.5rem;
   line-height: 2.5;
   font-size: 1rem;
   text-align: center;
-  
-
 }
 
 .order-button button:hover {
   background-color: rgba(255, 0, 0, 1);
-  
 }
 
-.order-button butto:active {
-  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+.order-button button:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .order-button button {
   line-height: 2;
   width: 7rem;
-  border-radius: .5rem;
-  color:rgb(255, 255, 255);
+  border-radius: 0.5rem;
+  color: rgb(255, 255, 255);
   font-weight: bold;
   background-color: rgba(199, 44, 44, 0.788);
   cursor: pointer;
-  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
-
