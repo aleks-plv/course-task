@@ -291,22 +291,37 @@ textarea {
 }
 
 /*!form*/
-*::after, *::before {
-  box-sizing: border-box;
-}
 
-form {
+#form {
   padding: 1rem;
   position: relative;
-  bottom: 20rem;
   background: rgba(14, 42, 71, 1);
-  margin-left: 15rem;
-  height: 16rem;
   width: 21rem;
-  max-width: 80%;
-  border-radius: 1rem;
-  z-index: 10;
   transition: 200ms ease-in-out;
+  border: 0.1rem solid black;
+  border-radius: 1rem;
+  top: 50%;
+  left: 50%;
+  max-width: 80%;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 0;
 }
 
 .close {
@@ -319,8 +334,6 @@ form {
   margin-left: 17rem;
   margin-bottom: 0.5rem;
 }
-
-
 
 label {
   /* Uniform size & alignment */
