@@ -12,6 +12,8 @@
     <script defer src="script.js"></script>
   </head>
   <body>
+    <div id="overlay" class="active"></div>
+
     <header class="header-style">
       <div class="logo">
         <a href="index.html">
@@ -19,32 +21,30 @@
         </a>
       </div>
     </header>
+    <div class="all-info">
+      <div class="book-div-container">
 
-    <div class="book-div-container">
-      <div
-        class="book-img"
-        style="
-          padding: 5rem 5rem 2rem 7rem;
-          width: 35rem;
-          display: flex;
-          margin-bottom: 1rem;
-        "
-      >
-        <img src="club5AM.jpg" alt="cover" />
+        <div class="book-img-page2">
+          <img src="club5AM.jpg" alt="cover" />
+        </div>
 
         <div class="book-information" style="margin-top: 1rem">
-          <h3>Клуб 5 сутринта</h3>
+
+          <h3>Клуб 5 сутринта (Пильо вярва в </h3>
           <p>Автор: Робин Шарма</p>
           <p>Издателство: Екслибрис</p>
           <p>Издание: Мека корица</p>
           <p>Брой страници: 368</p>
 
-          <div class="stars">
-            <a>⭐</a>
-            <a>⭐</a>
-            <a>⭐</a>
-            <a>⭐</a>
-            <a>⭐</a>
+          <!--!stars-->
+          <div class="stars-div">
+            <div class="stars">
+              <a>⭐</a>
+              <a>⭐</a>
+              <a>⭐</a>
+              <a>⭐</a>
+              <a>⭐</a>
+            </div>
           </div>
 
           <div class="buy-button" style="padding: 1rem">
@@ -61,33 +61,30 @@
               <div class="modal-header">
                 <button data-close-button class="close">&times;</button>
               </div>
+    
               <div class="modal-body">
                 <input type="text" name="name" placeholder="Име" required />
                 <input type="email" name="email" placeholder="Имейл" required />
                 <textarea name="message" placeholder="Съобщение"></textarea>
               </div>
-
+    
               <div class="order-button">
                 <button type="submit">Поръчка</button>
               </div>
             </form>
           </div>
-          <div id="overlay" class="active"></div>
+
         </div>
+
+      
       </div>
 
+     
+
       <div class="full-description-content">
+
         <div class="row-header">
-          <h2
-            style="
-              background: none;
-              font-family: Courier, monospace;
-              font-size: 3rem;
-              padding-bottom: 2rem;
-            "
-          >
-            Пълно описание на продукта
-          </h2>
+          <h2>Пълно описание на продукта</h2>
         </div>
 
         <div class="text-page">
