@@ -282,6 +282,7 @@ h2 {
 .text-page p {
   line-height: 2rem;
   font-family: "Raleway", sans-serif;
+  text-align: left;
 }
 
 .book-list {
@@ -293,6 +294,7 @@ h2 {
   list-style-type: disc;
   background: none;
   line-height: 2;
+  text-align: left;
 }
 
 .text-page p {
