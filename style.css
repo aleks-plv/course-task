@@ -6,7 +6,7 @@
 * {
   padding: 0;
   margin: 0;
-  /* outline: 1px rgb(0, 255, 0) solid;     */
+  /* outline: 1px rgb(0, 255, 0) solid; */
   box-sizing: border-box;
   color: white;
 }
@@ -49,13 +49,6 @@ a {
   text-align: center;
   line-height: 3;
   color: black;
-}
-
-.nav-container {
-  display: flex;
-  gap: 2rem;
-  padding-right: 2rem;
-  background-color: rgb(240, 172, 70);
 }
 
 h2 {
@@ -148,7 +141,6 @@ h2 {
 /*!pages*/
 
 .book-div-container {
-  /* height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -157,7 +149,6 @@ h2 {
 
 .book-img-page2 {
   margin: 2rem;
-  /* padding: 5rem 5rem 2rem 7rem; */
   justify-content: center;
   width: 35rem;
   display: flex;
@@ -194,7 +185,7 @@ h2 {
 .book-information p {
   text-align: center;
   margin-left: 11rem;
-  padding: 0.5rem; /*tuk imashe do 0.rem i 17rem*/
+  padding: 0.5rem;
   width: 50%;
   font-size: 1.3rem;
   line-height: 2rem;
@@ -202,7 +193,8 @@ h2 {
   text-shadow: 1px 1px 2px black;
 }
 
-/*stars*/
+/*!stars*/
+
 .stars-div {
   height: 12rem;
   width: 100%;
@@ -217,7 +209,6 @@ h2 {
   height: 7rem;
   padding: 2rem 1rem;
   margin-top: 5rem;
-
   border-radius: 1rem;
   background: rgba(121, 120, 120, 0.578);
   box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
@@ -251,57 +242,8 @@ h2 {
   opacity: 100%;
 }
 
-.full-description-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  /* margin: 2rem 2rem 2rem 9rem; */
-  margin: 1rem;
-  padding: 3rem;
-  /* width: 75%; */
-  background: rgba(121, 120, 120, 0.578);
-  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
-    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
-  border-radius: 1rem;
-  text-shadow: 1px 1px 2px black;
-}
+/*!btn*/
 
-.full-description-content p {
-  line-height: 0;
-}
-
-.row-header h2 {
-  background: none;
-  font-family: Courier, monospace;
-  font-size: 3rem;
-  padding-bottom: 2rem;
-}
-
-.text-page p {
-  line-height: 2rem;
-  font-family: "Raleway", sans-serif;
-  text-align: left;
-}
-
-.book-list {
-  padding: 1rem 3rem 2rem 3rem;
-}
-
-.book-list li {
-  font-family: "Raleway", sans-serif;
-  list-style-type: disc;
-  background: none;
-  line-height: 2;
-  text-align: left;
-}
-
-.text-page p {
-  padding-bottom: 2rem;
-}
-
-/*#btn*/
 #btn {
   background: rgba(121, 120, 120, 0.578);
   border-radius: 1rem;
@@ -310,12 +252,6 @@ h2 {
   box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
     inset -2px -2px 3px rgba(0, 0, 0, 0.6);
   text-shadow: 1px 1px 2px black;
-}
-
-input,
-textarea {
-  color: black;
-  resize: none;
 }
 
 /*!form*/
@@ -378,6 +314,8 @@ textarea {
   width: 18rem;
   box-sizing: border-box;
   margin: 0.3rem;
+  color: black;
+  resize: none;
 }
 
 input:focus,
@@ -398,15 +336,6 @@ textarea {
   text-align: center;
 }
 
-.order-button button:hover {
-  background-color: rgba(255, 0, 0, 1);
-}
-
-.order-button button:active {
-  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
-    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
-}
-
 .order-button button {
   line-height: 2;
   width: 7rem;
@@ -417,6 +346,60 @@ textarea {
   cursor: pointer;
   box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
     inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.order-button button:hover {
+  background-color: rgba(255, 0, 0, 1);
+}
+
+.order-button button:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.full-description-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 1rem;
+  padding: 3rem;
+  background: rgba(121, 120, 120, 0.578);
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  border-radius: 1rem;
+  text-shadow: 1px 1px 2px black;
+}
+
+.row-header h2 {
+  background: none;
+  font-family: Courier, monospace;
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+
+.full-description-content p {
+  line-height: 0;
+}
+
+.text-page p {
+  line-height: 2rem;
+  font-family: "Raleway", sans-serif;
+  text-align: left;
+  padding-bottom: 2rem;
+}
+
+.book-list {
+  padding: 1rem 3rem 2rem 3rem;
+}
+
+.book-list li {
+  font-family: "Raleway", sans-serif;
+  list-style-type: disc;
+  background: none;
+  line-height: 2;
+  text-align: left;
 }
 
 @media (width <= 1000px) {
@@ -433,12 +416,6 @@ textarea {
     align-items: center;
   }
 
-  .book-info p {
-    padding: 2rem;
-    text-align: left;
-    font-size: 1.25rem;
-  }
-
   .book-img img,
   .book-img-page2 img {
     max-width: 60%;
@@ -451,52 +428,25 @@ textarea {
 
   .book-info h3 {
     font-size: 2rem;
-    /*!smenq se fonta kogato se priloji tova*/
   }
 
   .book-info h4 {
     font-size: 1.5rem;
   }
+
+  .book-info p {
+    padding: 2rem;
+    text-align: left;
+    font-size: 1.25rem;
+  }
+
   .book-div-container {
-    /* display: block; */
     height: auto;
   }
 
   .book-information {
     align-items: center;
     width: 80%;
-  }
-
-  .stars-div {
-    width: 100%;
-  }
-
-  .stars {
-    margin-left: 2rem;
-    width: 40rem;
-  }
-
-  #btn {
-    width: 50%;
-  }
-
-  .buy-button {
-    padding: 0;
-  }
-
-  #form {
-    margin-left: 2rem;
-  }
-
- input, textarea {
-  width: 12rem;
- }
-
- .close {
-  margin-left: 12rem;
- }
-
-  .book-information {
     margin: 5rem 1rem 10rem 1rem;
   }
 
@@ -514,30 +464,46 @@ textarea {
     align-items: center;
   }
 
-  .row-header h2 {
-    font-size: 2rem;
+  .stars-div {
+    width: 100%;
   }
 
-  /* .full-description-content {
-    justify-content: center;
-    margin: 0 0 0 2rem; 
-    margin: 0;
-    align-items: center;
-    padding: 1rem;
-    width: 85%;
-    
-  } */
+  .stars {
+    margin-left: 2rem;
+    width: 40rem;
+  }
 
   #form {
     top: -39rem;
     left: -12.5rem;
     transform: translate(20%, 20%);
     width: 15rem
+    margin-left: 2rem;
+  }
+
+  input, textarea {
+    width: 12rem;
+  }
+
+  .close {
+    margin-left: 12rem;
+  }
+
+  .buy-button {
+    padding: 0;
+  }
+
+  #btn {
+   width: 50%;
   }
 
   .full-description-content h2,
   .full-description-content p {
     text-align: left;
+  }
+
+  .row-header h2 {
+    font-size: 2rem;
   }
 
   .book-list {

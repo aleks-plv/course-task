@@ -1,4 +1,3 @@
-//button order
 const btn = document.getElementById("btn");
 const form = document.getElementById("form");
 const overlay = document.getElementById("overlay");
@@ -6,11 +5,11 @@ const closeBtn = document.querySelector(".close");
 
 btn.addEventListener("click", () => {
   if (form.style.display === "none") {
-    //ako formata e skrita se pokazva
+    //shows form
     form.style.display = "block";
     overlay.style.opacity = 1;
   } else {
-    form.style.display = "none"; //skriva formata
+    form.style.display = "none"; //hides form
     overlay.style.opacity = 0;
   }
 });
