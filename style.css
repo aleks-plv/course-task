@@ -13,6 +13,7 @@
 
 body {
   background: url("./background.svg") center center;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -134,6 +135,10 @@ h2 {
     inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
+.buy-button button:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .buy-button span {
   font-size: 1.75rem;
 }
@@ -159,6 +164,10 @@ h2 {
   max-width: 80%;
 }
 
+.book-img-page2 img:hover {
+  filter: drop-shadow(0 0 0.75rem rgb(238, 233, 169));
+}
+
 .book-information {
   display: flex;
   flex-direction: column;
@@ -182,6 +191,7 @@ h2 {
   text-shadow: 1px 1px 2px black;
 }
 
+
 .book-information p {
   text-align: center;
   margin-left: 11rem;
@@ -192,6 +202,29 @@ h2 {
   font-family: "Raleway", sans-serif;
   text-shadow: 1px 1px 2px black;
 }
+
+.book-information h3:hover,
+.book-information p:hover {
+  text-shadow: #FC0 1px 0 10px;
+}
+
+ .short-info {
+  animation-duration: 1.5s;
+  animation-name: slidein
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+} 
+
 
 /*!stars*/
 
@@ -243,6 +276,9 @@ h2 {
 }
 
 /*!btn*/
+#btn:hover {
+  background-color: rgba(20, 18, 18, 0.578);
+}
 
 #btn {
   background: rgba(121, 120, 120, 0.578);
@@ -253,6 +289,8 @@ h2 {
     inset -2px -2px 3px rgba(0, 0, 0, 0.6);
   text-shadow: 1px 1px 2px black;
 }
+
+
 
 /*!form*/
 
@@ -370,6 +408,10 @@ textarea {
     inset -2px -2px 3px rgba(0, 0, 0, 0.6);
   border-radius: 1rem;
   text-shadow: 1px 1px 2px black;
+}
+
+.full-description-content:hover {
+  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.719));
 }
 
 .row-header h2 {
