@@ -166,6 +166,8 @@ h2 {
 
 .book-img-page2 img:hover {
   filter: drop-shadow(0 0 0.75rem rgb(238, 233, 169));
+  transform: translateY(-10px);
+  transition: all 0.5s ease-out;
 }
 
 .book-information {
@@ -208,7 +210,10 @@ h2 {
   text-shadow: #FC0 1px 0 10px;
 }
 
- .short-info {
+ .short-info,
+ .row-header h2,
+ .text-page p,
+ .book-list li {
   animation-duration: 1.5s;
   animation-name: slidein
 }
@@ -261,7 +266,10 @@ h2 {
 .stars:hover a,
 .stars a:hover {
   opacity: 100%;
+  transform: translateY(-10px);
+  transition: all 0.5s ease-out;
 }
+
 
 .stars:active {
   background: none;
@@ -278,6 +286,8 @@ h2 {
 /*!btn*/
 #btn:hover {
   background-color: rgba(20, 18, 18, 0.578);
+  transform: translateY(-10px);
+  transition: all 0.5s ease-out;
 }
 
 #btn {
