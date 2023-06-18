@@ -3,6 +3,45 @@ const form = document.getElementById("form");
 const overlay = document.getElementById("overlay");
 const closeBtn = document.querySelector(".close");
 
+//footer
+const gitLink = document.getElementById("git");
+const linkedInLink = document.getElementById("linkedin");
+
+// page 1 img
+const imageLink1 = document.getElementById("club5AM");
+const imageLink2 = document.getElementById("devilBook");
+const imageLink3 = document.getElementById("richDad");
+const imageLink4 = document.getElementById("leaders");
+const imageLink5 = document.getElementById("winner");
+
+gitLink.addEventListener("click", () => {
+  window.open("https://github.com/aleks-plv", "_blank");
+});
+
+linkedInLink.addEventListener("click", () => {
+  window.open("https://www.linkedin.com/in/aleksandrina-velikova-4b31bb275/", "_blank");
+});
+
+imageLink1.addEventListener("click", () => {
+  window.open("club5AM.html", "_blank");
+});
+
+imageLink2.addEventListener("click", () => {
+  window.open("devilBook.html", "_blank");
+});
+
+imageLink3.addEventListener("click", () => {
+  window.open("richDad.html", "_blank");
+});
+
+imageLink4.addEventListener("click", () => {
+  window.open("leaders.html", "_blank");
+});
+
+imageLink5.addEventListener("click", () => {
+  window.open("winner.html", "_blank");
+});
+
 btn.addEventListener("click", () => {
   if (form.style.display === "none") {
     //shows form
