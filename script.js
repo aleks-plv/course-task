@@ -14,6 +14,13 @@ const imageLink3 = document.getElementById("richDad");
 const imageLink4 = document.getElementById("leaders");
 const imageLink5 = document.getElementById("winner");
 
+// buy buttons
+const buyBook1 = document.getElementById("buy-5am");
+const buyBook2 = document.getElementById("buy-devil");
+const buyBook3 = document.getElementById("buy-rich");
+const buyBook4 = document.getElementById("buy-leaders");
+const buyBook5 = document.getElementById("buy-winners");
+
 gitLink.addEventListener("click", () => {
   window.open("https://github.com/aleks-plv", "_blank");
 });
@@ -22,6 +29,7 @@ linkedInLink.addEventListener("click", () => {
   window.open("https://www.linkedin.com/in/aleksandrina-velikova-4b31bb275/", "_blank");
 });
 
+//img
 imageLink1.addEventListener("click", () => {
   window.open("club5AM.html", "_blank");
 });
@@ -39,6 +47,27 @@ imageLink4.addEventListener("click", () => {
 });
 
 imageLink5.addEventListener("click", () => {
+  window.open("winner.html", "_blank");
+});
+
+// buy button
+buyBook1.addEventListener("click", () => {
+  window.open("club5AM.html", "_blank");
+});
+
+buyBook2.addEventListener("click", () => {
+  window.open("devilBook.html", "_blank");
+});
+
+buyBook3.addEventListener("click", () => {
+  window.open("richDad.html", "_blank");
+});
+
+buyBook4.addEventListener("click", () => {
+  window.open("leaders.html", "_blank");
+});
+
+buyBook5.addEventListener("click", () => {
   window.open("winner.html", "_blank");
 });
 
