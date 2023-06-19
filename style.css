@@ -185,29 +185,9 @@ h2 {
   padding-top: .5rem;
 }
 
-.github-img {
-  margin-left: 15%;
-  margin-right: 2%;
-}
-
-.github-img img {
-  width: 45%;
-}
-
-.github-img img:hover,
-.linkedin-img img:hover {
-  cursor: pointer;
-}
-
-.linkedin-img {
-  width: 2%;
-  height: 80%;
-}
-
-.linkedin-img img {
-  width: 100%;
-  height: 80%;
-
+.fa-brands {
+  width: 3rem;
+ 
 }
 
 /*!pages*/
